@@ -1,7 +1,8 @@
 import 'package:bmi_calc/constants.dart';
-import 'package:bmi_calc/input_page.dart';
+import 'package:bmi_calc/Screens/input_page.dart';
 import 'package:flutter/material.dart';
-import 'reusable_card.dart';
+import '../Componets/reusable_card.dart';
+import '../Componets/bottom_button.dart';
 
 class ResultsPage extends StatelessWidget {
   const ResultsPage({Key? key}) : super(key: key);
@@ -22,6 +23,8 @@ class ResultsPage extends StatelessWidget {
             children: [
               Expanded(
                 child: Container(
+                  padding: EdgeInsets.all(15),
+                  alignment: Alignment.bottomLeft,
                   child: Text(
                     'Your Result',
                     style: ktitleText,
