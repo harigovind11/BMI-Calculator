@@ -10,11 +10,23 @@ const klabelTextStyle = TextStyle(
   color: Color(0xff8d8e98),
 );
 const knumberTextStyle = TextStyle(fontSize: 50, fontWeight: FontWeight.w900);
-const klargeBottonNutton = TextStyle(
-  fontSize: 25,
-  fontWeight: FontWeight.bold,
-);
 const klargeBottomButton = TextStyle(
   fontSize: 25,
   fontWeight: FontWeight.bold,
+);
+const ktitleText = TextStyle(
+  fontSize: 50,
+  fontWeight: FontWeight.bold,
+);
+const kresultText = TextStyle(
+  fontSize: 22,
+  color: Color(0xff24d876),
+  fontWeight: FontWeight.bold,
+);
+const kbmiText = TextStyle(
+  fontSize: 100,
+  fontWeight: FontWeight.bold,
+);
+const kbmiQuoteText = TextStyle(
+  fontSize: 22,
 );
