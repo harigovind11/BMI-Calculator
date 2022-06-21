@@ -230,21 +230,37 @@ class _InputPageState extends State<InputPage> {
               ],
             ),
           ),
-          GestureDetector(
+          BottomButton(
+            buttonText: 'CALCULATE',
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => ResultsPage()));
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ResultsPage(),
+                ),
+              );
             },
-            child: Container(
-              child:
-                  Center(child: Text('CALCULATE', style: klargeBottomButton)),
-              color: Color(0xFFEB1555),
-              margin: EdgeInsets.only(top: 10),
-              width: double.infinity,
-              height: 80,
-            ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class BottomButton extends StatelessWidget {
+  BottomButton({required this.buttonText, required this.onTap});
+  final VoidCallback onTap;
+  final String buttonText;
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        child: Center(child: Text(buttonText, style: klargeBottomButton)),
+        color: Color(0xFFEB1555),
+        margin: EdgeInsets.only(top: 10),
+        width: double.infinity,
+        height: 80,
       ),
     );
   }

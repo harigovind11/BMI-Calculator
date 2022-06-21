@@ -1,4 +1,5 @@
 import 'package:bmi_calc/constants.dart';
+import 'package:bmi_calc/input_page.dart';
 import 'package:flutter/material.dart';
 import 'reusable_card.dart';
 
@@ -30,23 +31,33 @@ class ResultsPage extends StatelessWidget {
               Expanded(
                 flex: 5,
                 child: ReusableCard(
-                    colour: kactiveCardColour,
-                    cardChild: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Text(
-                          'Normal',
-                          style: kresultText,
-                        ),
-                        Text(
-                          '18.4',
-                          style: kbmiText,
-                        ),
-                        Text('Your BMI is Low ', style: kbmiQuoteText)
-                      ],
-                    )),
+                  colour: kactiveCardColour,
+                  cardChild: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        'Normal',
+                        style: kresultText,
+                      ),
+                      Text(
+                        '18.4',
+                        style: kbmiText,
+                      ),
+                      Text(
+                        'Your BMI is Low ',
+                        style: kbmiQuoteText,
+                        textAlign: TextAlign.center,
+                      ),
+                    ],
+                  ),
+                ),
               ),
+              BottomButton(
+                  buttonText: 'RE-CALCULATE',
+                  onTap: () {
+                    Navigator.pop(context);
+                  })
             ],
           ),
         ));
