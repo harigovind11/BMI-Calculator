@@ -236,13 +236,8 @@ class _InputPageState extends State<InputPage> {
                   MaterialPageRoute(builder: (context) => ResultsPage()));
             },
             child: Container(
-              child: Center(
-                child: Text('CALCULATE',
-                    style: TextStyle(
-                        fontSize: 40,
-                        fontWeight: FontWeight.w900,
-                        color: Color.fromARGB(255, 0, 0, 0))),
-              ),
+              child:
+                  Center(child: Text('CALCULATE', style: klargeBottonNutton)),
               color: Color(0xFFEB1555),
               margin: EdgeInsets.only(top: 10),
               width: double.infinity,
