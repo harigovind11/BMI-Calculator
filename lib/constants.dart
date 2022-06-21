@@ -14,3 +14,7 @@ const klargeBottonNutton = TextStyle(
   fontSize: 25,
   fontWeight: FontWeight.bold,
 );
+const klargeBottomButton = TextStyle(
+  fontSize: 25,
+  fontWeight: FontWeight.bold,
+);
